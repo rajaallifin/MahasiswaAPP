@@ -22,6 +22,9 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 import java.io.FileOutputStream
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.util.UUID
 
 class MainActivity : AppCompatActivity() {
 
@@ -139,7 +142,8 @@ class MainActivity : AppCompatActivity() {
         return try {
             val downloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
             if (!downloads.exists()) downloads.mkdirs()
-            val outFile = File(downloads, "kartu_murojaah.pdf")
+            val random = UUID.randomUUID()
+            val outFile = File(downloads, "kartu_murojaah_$random.pdf")
             body.byteStream().use { input ->
                 FileOutputStream(outFile).use { output ->
                     val buffer = ByteArray(4096)
