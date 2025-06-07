@@ -16,7 +16,6 @@ object MahasiswaRetrofiInstance {
         val prefs = context.getSharedPreferences("prefs", Context.MODE_PRIVATE)
 
         val logging = HttpLoggingInterceptor().apply {
-            // choose your level; BODY will log request+response headers and bodies
             level = HttpLoggingInterceptor.Level.BODY
         }
 
