@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Title -->
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail Setoran"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Basic Info Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvNama"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="—"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvNim"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="—"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Angkatan:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAngkatan"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="—"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSemester"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="—"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosen PA:"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDosenPa"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/downloadSetoran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dowmload Setoran"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorOnBackground"
+            android:alpha="0.12"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Info Dasar Section -->
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info Dasar"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wajib:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvWajib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="—"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSudah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="—"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum:"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvBelum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="—"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress:"
+                    android:textStyle="bold"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvPersen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:text="—"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Ringkasan Recycler -->
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan per Label"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRingkasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"/>
+
+        <!-- Detail Recycler -->
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Ayat"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:layout_marginHorizontal="8dp"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

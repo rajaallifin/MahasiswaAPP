@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="KP"
+        android:textStyle="bold"/>
+
+    <!-- Wajib -->
+    <TextView
+        android:id="@+id/tvWajib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:text="8"/>
+
+    <!-- Sudah -->
+    <TextView
+        android:id="@+id/tvSudah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:text="0"/>
+
+    <!-- Belum -->
+    <TextView
+        android:id="@+id/tvBelum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:text="8"/>
+
+    <!-- Persentase -->
+    <TextView
+        android:id="@+id/tvPersen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:text="0%"/>
+</LinearLayout>
