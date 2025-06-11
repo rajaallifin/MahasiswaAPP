@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         val nimText = inputNim.text.toString().trim()
         val pwdText = password.text.toString().trim()
         if (nimText.isEmpty()) {
-            inputNim.error = "Email wajib diisi"
+            inputNim.error = "NIM wajib diisi"
             return@apply
         }
         if (pwdText.isEmpty()) {
